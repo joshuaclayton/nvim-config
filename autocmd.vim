@@ -21,4 +21,7 @@ if has("autocmd")
   autocmd BufWinLeave,WinLeave * setlocal nocursorcolumn
 
   autocmd BufWinLeave * call clearmatches()
+
+  autocmd BufNewFile,BufRead *.md setlocal spell
+  autocmd BufNewFile,BufRead *.elm set filetype=elm
 end
