@@ -1,11 +1,14 @@
 let s:editor_root=expand("~/.config/nvim")
 let &rtp = &rtp . ',' . s:editor_root . '/bundle/Vundle.vim/'
+set nocompatible
+filetype off
 call vundle#rc(s:editor_root . '/bundle')
 
 Plugin 'Shougo/vimproc.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tComment'
+Plugin 'tpope/vim-projectionist'
 
 source $HOME/.config/nvim/autocmd.vim
 source $HOME/.config/nvim/airline.vim
