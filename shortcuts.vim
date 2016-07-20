@@ -2,6 +2,7 @@
 " Visual mode: D
 vmap D y'>p
 
+vmap <silent> <C-I> :!import-sort<CR>
 " Disable shift+k
 map K <Nop>
 
