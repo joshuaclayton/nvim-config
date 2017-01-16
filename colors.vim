@@ -2,7 +2,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 set t_Co=256
 colorscheme solarized
-set background=light
+set background=dark
 call togglebg#map("<F6>")
 match Error /\%80v.\+/
 
