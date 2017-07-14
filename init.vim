@@ -23,6 +23,7 @@ source $HOME/.config/nvim/git.vim
 source $HOME/.config/nvim/haskell.vim
 source $HOME/.config/nvim/rails.vim
 source $HOME/.config/nvim/ruby.vim
+source $HOME/.config/nvim/scala.vim
 source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/syntastic.vim
