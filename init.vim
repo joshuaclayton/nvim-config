@@ -10,6 +10,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tComment'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-endwise'
 
 source $HOME/.config/nvim/autocmd.vim
 source $HOME/.config/nvim/airline.vim
