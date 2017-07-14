@@ -12,6 +12,7 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-endwise'
 
+source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/autocmd.vim
 source $HOME/.config/nvim/airline.vim
 source $HOME/.config/nvim/clipboard.vim
@@ -23,11 +24,9 @@ source $HOME/.config/nvim/elm.vim
 source $HOME/.config/nvim/git.vim
 source $HOME/.config/nvim/haskell.vim
 source $HOME/.config/nvim/rails.vim
-source $HOME/.config/nvim/ruby.vim
 source $HOME/.config/nvim/scala.vim
 source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/shortcuts.vim
-source $HOME/.config/nvim/syntastic.vim
 source $HOME/.config/nvim/visual.vim
 
 filetype plugin indent on
