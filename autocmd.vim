@@ -1,3 +1,16 @@
+function! RestoreCursor()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+function! RestoreInsert()
+  if line("'z") <= line("$")
+    normal! g`Z
+  endif
+endfunction
+
 if has("autocmd")
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -6,10 +19,7 @@ if has("autocmd")
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+  autocmd BufReadPost * call RestoreCursor()
 
   autocmd BufWinEnter,WinEnter * setlocal cursorline
   autocmd BufWinLeave,WinLeave * setlocal nocursorline
@@ -24,4 +34,8 @@ if has("autocmd")
 
   autocmd BufNewFile,BufRead *.md setlocal spell
   autocmd BufNewFile,BufRead *.elm set filetype=elm
+
+  autocmd BufWritePre *.hs normal! mZ
+  autocmd BufWritePre *.hs %!import-sort
+  autocmd BufWritePost *.hs call RestoreInsert()
 end
