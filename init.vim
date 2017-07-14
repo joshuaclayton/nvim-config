@@ -11,6 +11,16 @@ Plugin 'tComment'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-endwise'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'janko-m/vim-test'
+
+let test#strategy = "neovim"
+let test#runners = {'Haskell': ['HSpec']}
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/autocmd.vim
@@ -23,6 +33,7 @@ source $HOME/.config/nvim/elixir.vim
 source $HOME/.config/nvim/elm.vim
 source $HOME/.config/nvim/git.vim
 source $HOME/.config/nvim/haskell.vim
+source $HOME/.config/nvim/purescript.vim
 source $HOME/.config/nvim/rails.vim
 source $HOME/.config/nvim/scala.vim
 source $HOME/.config/nvim/search.vim
