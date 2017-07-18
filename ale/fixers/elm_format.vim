@@ -6,6 +6,7 @@ call ale#fix#registry#Add('elm_format', 'ale#fixers#elm_format#Fix', ['elm'], 'F
 
 function! ale#fixers#elm_format#GetExecutable(buffer) abort
     return ale#node#FindExecutable(a:buffer, 'elm_elm_format', [
+    \   'node_modules/.bin/elm-format',
     \   'elm-format',
     \])
 endfunction
