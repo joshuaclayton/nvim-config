@@ -34,6 +34,7 @@ if has("autocmd")
 
   autocmd BufNewFile,BufRead *.md setlocal spell
   autocmd BufNewFile,BufRead *.elm set filetype=elm
+  autocmd BufNewFile,BufRead *.cr set filetype=crystal
 
   autocmd BufWritePre *.hs normal! mZ
   autocmd BufWritePre *.hs %!import-sort

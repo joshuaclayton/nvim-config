@@ -19,6 +19,7 @@ source $HOME/.config/nvim/airline.vim
 source $HOME/.config/nvim/clipboard.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/completion.vim
+source $HOME/.config/nvim/crystal.vim
 source $HOME/.config/nvim/ctags.vim
 source $HOME/.config/nvim/elixir.vim
 source $HOME/.config/nvim/elm.vim
