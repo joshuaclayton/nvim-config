@@ -12,15 +12,6 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-endwise'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'janko-m/vim-test'
-
-let test#strategy = "neovim"
-let test#runners = {'Haskell': ['HSpec']}
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
 
 source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/autocmd.vim
@@ -38,6 +29,7 @@ source $HOME/.config/nvim/rails.vim
 source $HOME/.config/nvim/scala.vim
 source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/shortcuts.vim
+source $HOME/.config/nvim/test.vim
 source $HOME/.config/nvim/visual.vim
 
 filetype plugin indent on
