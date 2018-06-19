@@ -34,7 +34,11 @@ if has("autocmd")
 
   autocmd BufNewFile,BufRead *.md setlocal spell
   autocmd BufNewFile,BufRead *.elm set filetype=elm
+  autocmd BufNewFile,BufRead *.purs set filetype=purescript
   autocmd BufNewFile,BufRead *.cr set filetype=crystal
+  autocmd BufNewFile,BufRead *.ts set filetype=typescript
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+  autocmd BufNewFile,BufRead *.vue set filetype=vue
 
   autocmd BufWritePre *.hs normal! mZ
   autocmd BufWritePre *.hs %!import-sort

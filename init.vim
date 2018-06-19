@@ -12,6 +12,7 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-endwise'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'Shougo/deoplete.nvim'
 
 source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/autocmd.vim
@@ -31,6 +32,8 @@ source $HOME/.config/nvim/scala.vim
 source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/test.vim
+source $HOME/.config/nvim/typescript.vim
+source $HOME/.config/nvim/vue.vim
 source $HOME/.config/nvim/visual.vim
 
 filetype plugin indent on
