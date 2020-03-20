@@ -26,6 +26,7 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " Indenting on save is too aggressive for me
 let g:hindent_on_save = 1
+let g:hindent_indent_size = 4
 
 " Helper function, called below with mappings
 function! HaskellFormat(which) abort
