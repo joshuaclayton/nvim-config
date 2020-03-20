@@ -9,7 +9,7 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 nnoremap <silent> <F7> :let _s=@/<Bar>:%s/“/"/e<Bar>:%s/”/"/e<Bar>:%s/’/'/e<Bar>%s![^ ]\zs  \+! !g<Bar>:let @/=_s<Bar>:nohl<CR>
 map <silent> <C-h> ^cw
 nnoremap <silent> <F4> :GundoToggle<CR>
-nnoremap <silent> 6 :b#<CR>
+nnoremap <silent> <C-6> :b#<CR>
 
 nnoremap <silent> <C-D> :qa<CR>
 
