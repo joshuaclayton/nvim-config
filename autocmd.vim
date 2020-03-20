@@ -39,8 +39,4 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.ts set filetype=typescript
   autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
   autocmd BufNewFile,BufRead *.vue set filetype=vue
-
-  autocmd BufWritePre *.hs normal! mZ
-  autocmd BufWritePre *.hs %!import-sort
-  autocmd BufWritePost *.hs call RestoreInsert()
 end
