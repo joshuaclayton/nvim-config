@@ -1,1 +1,1 @@
-set tags=./../.git/tags,./tmp/tags,tags
+set tags=.git/tags,./../.git/tags,./tmp/tags,tags
