@@ -1,5 +1,3 @@
-Plugin 'w0rp/ale'
-
 source $HOME/.config/nvim/ale/fixers/elm_format.vim
 " source $HOME/.config/nvim/ale/fixers/exfmt.vim
 

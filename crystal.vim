@@ -1,1 +1,0 @@
-Plugin 'rhysd/vim-crystal'

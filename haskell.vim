@@ -1,10 +1,3 @@
-Plugin 'neovimhaskell/haskell-vim'
-Plugin 'alx741/vim-hindent'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'ervandew/supertab'
-Plugin 'parsonsmatt/intero-neovim'
-
 " source $HOME/.config/nvim/syntax/haskell.vim
 source $HOME/.config/nvim/syntax/cabal.vim
 " ----- neovimhaskell/haskell-vim -----

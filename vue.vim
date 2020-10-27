@@ -1,1 +1,0 @@
-Plugin 'posva/vim-vue'

@@ -1,5 +1,3 @@
-Plugin 'janko-m/vim-test'
-
 source $HOME/.config/nvim/autoload/test/strategy.vim
 let test#strategy = "neovimvert"
 
