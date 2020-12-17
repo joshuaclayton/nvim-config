@@ -30,6 +30,8 @@ Plug 'elmcast/elm-vim'
 Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
