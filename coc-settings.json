@@ -1,6 +1,10 @@
 {
   "stylelintplus.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": ["scss", "css", "markdown"],
+  "rust-analyzer.inlayHints.enable": true,
+  "rust-analyzer.inlayHints.refreshOnInsertMode": true,
+  "rust-analyzer.inlayHints.typeHintsSeparator": "‣ ",
+  "rust-analyzer.inlayHints.chainingHintsSeparator": "‣ ",
   "languageserver": {
     "haskell": {
       "command": "hie-wrapper",
