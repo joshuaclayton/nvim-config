@@ -5,7 +5,7 @@ call ale#Set('elm_elm_format_options', '--yes')
 call ale#fix#registry#Add('elm_format', 'ale#fixers#elm_format#Fix', ['elm'], 'Fix Elm files with elm-format.')
 
 function! ale#fixers#elm_format#GetExecutable(buffer) abort
-    return ale#node#FindExecutable(a:buffer, 'elm_elm_format', [
+    return ale#path#FindExecutable(a:buffer, 'elm_elm_format', [
     \   'elm-format',
     \])
 endfunction
