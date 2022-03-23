@@ -28,7 +28,6 @@ Plug 'frigoeu/psc-ide-vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
 Plug 'elmcast/elm-vim'
-Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
