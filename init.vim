@@ -49,5 +49,5 @@ source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/test.vim
 source $HOME/.config/nvim/visual.vim
-source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/colors.vim
+source $HOME/.config/nvim/coc.vim

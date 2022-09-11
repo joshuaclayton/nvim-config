@@ -9,4 +9,5 @@ syntax on
 
 hi link CocRustTypeHint Comment
 hi link CocRustChainingHint Comment
+hi link CocMenuSel CursorLine
 highlight Comment cterm=italic gui=italic
