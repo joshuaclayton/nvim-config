@@ -1,15 +1,15 @@
 let s:editor_root=expand("~/.config/nvim")
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'vim-scripts/SyntaxAttr.vim'
 Plug 'Shougo/vimproc.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/tComment'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-eunuch'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'Shougo/deoplete.nvim'
 Plug 'w0rp/ale'
-Plug 'janko-m/vim-test'
+Plug 'vim-test/vim-test'
 Plug 'rhysd/vim-crystal'
 Plug 'tpope/vim-rails'
 Plug 'leafgarland/typescript-vim'
@@ -26,14 +26,22 @@ Plug 'posva/vim-vue'
 Plug 'raichoo/purescript-vim'
 Plug 'frigoeu/psc-ide-vim'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'alx741/vim-hindent'
 Plug 'elmcast/elm-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'jparise/vim-graphql'
+Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
 
 call plug#end()
+
+lua << EOF
+require'lspconfig'.solargraph.setup{}
+require'lspconfig'.ts_ls.setup{}
+EOF
 
 let g:rustfmt_autosave = 1
 

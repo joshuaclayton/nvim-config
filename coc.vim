@@ -32,7 +32,7 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+" inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
 inoremap <silent><expr> <TAB>
   \ coc#pum#visible() ? coc#pum#next(1) :
@@ -41,7 +41,7 @@ inoremap <silent><expr> <TAB>
   \ CheckBackSpace() ? "\<TAB>" :
   \ coc#refresh()
 
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-y>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -49,9 +49,10 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+map <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -84,8 +85,8 @@ augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+" xmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)

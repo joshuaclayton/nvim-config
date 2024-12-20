@@ -11,7 +11,8 @@ map <silent> <C-h> ^cw
 nnoremap <silent> <F4> :GundoToggle<CR>
 nnoremap <silent> <C-6> :b#<CR>
 nnoremap <silent> <Leader>s :Ag<CR>
-
+nnoremap <silent> <Leader>F :Files<CR>
+nnoremap <silent> <C-P> :Files<CR>
 nnoremap <silent> <C-D> :qa<CR>
 
 " allow backspacing over everything in insert mode
@@ -24,3 +25,4 @@ endfor
 
 map <Leader>E :e <C-R>=expand("%:p:h") . "/" <CR>
 map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+map -a	:call SyntaxAttr()<CR>

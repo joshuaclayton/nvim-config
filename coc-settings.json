@@ -1,31 +1,6 @@
 {
   "stylelintplus.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": ["scss", "css", "markdown"],
-  "rust-analyzer.inlayHints.enable": true,
-  "rust-analyzer.inlayHints.typeHints": true,
-  "rust-analyzer.inlayHints.chainingHints": true,
-  "rust-analyzer.inlayHints.refreshOnInsertMode": true,
-  "rust-analyzer.inlayHints.typeHintsSeparator": "‣ ",
-  "rust-analyzer.inlayHints.chainingHintsSeparator": "‣ ",
-  "languageserver": {
-    "haskell": {
-      "command": "hie-wrapper",
-      "args": ["--lsp"],
-      "rootPatterns": [
-        "*.cabal",
-        "stack.yaml",
-        "cabal.project",
-        "package.yaml"
-      ],
-      "filetypes": [
-        "hs",
-        "lhs",
-        "haskell"
-      ],
-      "initializationOptions": {
-        "languageServerHaskell": {
-        }
-      }
-    }
-  }
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "rust-analyzer.procMacro.attributes.enable": true
 }
